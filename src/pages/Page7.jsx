@@ -33,7 +33,7 @@ const Page7 = () => {
             overflow:'hidden',
             scrollTrigger:{
                 trigger:'.Hero',
-                start:'top 70%',
+                start:'top 100%',
                 end:'top 10%',
                 scrub:1
             }
@@ -57,7 +57,7 @@ const Page7 = () => {
   return (
     <>
         <div className='h-screen max-md:h-[80vw] bg-white max-md:mx-0 max-md:p-2 p-6 mx-5'>
-            <div className='section7 max-md:w-full bg-black w-full h-[70vw] rounded-[50px] relative'>
+            <div className='section7 max-md:w-full bg-black w-full h-[70vw] rounded-[50px] relative overflow-hidden'>
                 <img className='imgRotate w-[60vw] py-[12vw] mx-[19vw] absolute opacity-80 select-none' src="https://static.wixstatic.com/media/f1c650_e5c1c4b281ea418a8663a17e66f283f1~mv2.png/v1/fill/w_777,h_668,al_c,q_90,enc_auto/triangle%203.png" alt="" />
 
                 <div className='Hero max-md:mt-6 absolute top-1 flex gap-[44vw] mt-24'> 
