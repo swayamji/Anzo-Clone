@@ -50,3 +50,9 @@
 .same{
     transform-origin: 100% 70%;
 }
+.rotation{
+    perspective: 1000px;
+}
+.rotatee {
+    transform-style: preserve-3d;
+}

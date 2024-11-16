@@ -6,24 +6,55 @@ import React, { useEffect } from 'react'
 const Page5 = () => {
     gsap.registerPlugin(ScrollTrigger)
     useGSAP(function(){
-       if(window.innerWidth>1024){
-        gsap.from('.same1',{
-            transform:'rotateX(-80deg)',
-            duration:1,
-            opacity:0,
-            stagger:1,
-           scrollTrigger:{
-            trigger:'.same1',
-            markers:false,
-            start:"top 60%",
-            end:"top -300%",
-            scrub:1,
-            once:true
-           }
-        })
-       }
-    })
-
+        if(window.innerWidth>1024){
+         gsap.from('.same1',{
+             transform:'rotateX(-80deg)',
+             duration:1,
+             opacity:0,
+             stagger:1,
+            scrollTrigger:{
+             trigger:'.same1',
+             markers:false,
+             start:"top 60%",
+             end:"top -300%",
+             scrub:1,
+             once:true
+            }
+         })
+        }
+       else if(window.innerWidth<=1024 && window.innerWidth>768){
+         gsap.from('.same1',{
+             transform:'rotateX(-80deg)',
+             duration:3,
+             opacity:0,
+             stagger:1,
+            scrollTrigger:{
+             trigger:'.same1',
+             markers:false,
+             start:"top 60%",
+             end:"top -120%",
+             scrub:1,
+             once:true
+            }
+         })
+        }
+        else{
+         gsap.from('.same1',{
+             transform:'rotateX(-80deg)',
+             duration:1,
+             opacity:0,
+             stagger:0.5,
+            scrollTrigger:{
+             trigger:'.same1',
+             markers:false,
+             start:"top 60%",
+             end:"top -30%",
+             scrub:1,
+             once:true
+            }
+         })
+        }
+     })
   return (
     <div className='section2 bg-white text-center p-16 max-md:p-8  text-black overflow-x-hidden'>
         
