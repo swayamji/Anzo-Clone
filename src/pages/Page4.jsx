@@ -34,7 +34,6 @@ const Page4 = () => {
   }
  })
 
- ///DIKHA//
 
   return (
     <div className='section4 bg-white max-md:h-[81vw] h-screen p-5 relative overflow-hidden '>
