@@ -6,11 +6,13 @@
   "homepage": "https://swayamji.github.io/Anzo-Clone/",
 
   "scripts": {
+    "deploy": "npm run build && git add dist -f && git commit -m \"Deploy site\" && git subtree push --prefix dist origin main",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint ."
   },
+
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "gsap": "^3.12.5",
@@ -19,6 +21,7 @@
     "react-scroll": "^1.9.0",
     "remixicon": "^4.5.0"
   },
+
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/react": "^18.3.12",
