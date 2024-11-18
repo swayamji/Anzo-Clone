@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Replace 'Your-Repo-Name' with your GitHub repo name
+  base: '/', // Ensure absolute paths for deployment
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
